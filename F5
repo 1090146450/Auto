@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name         一直刷新页面
+// @namespace    https://blog.csdn.net/
+// @version      0.4
+// @description  zh-cn
+// @author       hh
+// @license      MIT
+// @match        https://www.baidu.*/*
+// @grant        none
+// @require      https://code.jquery.com/jquery-2.1.4.min.js
+// ==/UserScript==
+this.$ = this.jQuery = jQuery.noConflict(true);
+fresh();
+function fresh(){
+setTimeout("location.reload()",2000);
+}
